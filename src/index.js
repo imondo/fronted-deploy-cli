@@ -8,13 +8,14 @@ const SSH = new NodeSSH();
 deploy(config);
 
 async function deploy(config) {
+  console.log('[1/8] 压缩文件');
+  await compress(path.resolve(process.cwd(), `${config.localZipDir}`), config.localZipName);
+  
   // 连接服务器
-  console.log('[1/8] 连接服务器');
+  console.log('[2/8] 连接服务器');
   await connectServer(config.ssh);
   try {
-    console.log('[3/8] 压缩文件');
-    await compress(path.resolve(process.cwd(), `${config.localZipDir}`), config.localZipName);
-
+    
     // 上传压缩的项目文件
     console.log('[4/8] 上传压缩的项目文件');
     await SSH.putFile(
@@ -46,7 +47,7 @@ async function deploy(config) {
 async function connectServer(params) {
   await SSH.connect(params)
     .then(() => {
-      console.log('[2/8] 服务器连接成功！');
+      console.log('[3/8] 服务器连接成功！');
     })
     .catch((err) => {
       console.log('服务器连接失败！');
