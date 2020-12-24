@@ -12,7 +12,7 @@ async function deploy(config) {
   try {
     // 上传压缩的项目文件
     await SSH.putFile(
-      path.resolve(__dirname, config.localZip),
+      path.resolve(process.cwd(), config.localZip),
       `${config.distDir}/${config.distZipName}.zip`
     );
 
