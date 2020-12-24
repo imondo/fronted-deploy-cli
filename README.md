@@ -2,6 +2,10 @@
 
 前端本地部署至远程服务器
 
+[![npm version](https://badge.fury.io/js/fronted-deploy-cli.svg)](http://badge.fury.io/js/fronted-deploy-cli)
+
+![](https://nodei.co/npm/fronted-deploy-cli.png?downloads=true&downloadRank=true&stars=true)
+
 ## 安装依赖
 
 ```
