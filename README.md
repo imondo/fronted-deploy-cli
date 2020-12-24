@@ -2,9 +2,16 @@
 
 前端本地部署至远程服务器
 
+## 安装依赖
+
+```
+npm i fronted-deploy-cli -D
+
+```
+
 ## 配置文件
 
-项目目录下新建 `fd.config.js`
+项目根目录添加配置文件 `fd.config.js`
 
 ```js
 module.exports = {
@@ -18,4 +25,10 @@ module.exports = {
     port: 22
   }
 }
+```
+
+## 执行命令
+
+```
+fd-cli
 ```
