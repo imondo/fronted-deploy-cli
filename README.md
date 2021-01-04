@@ -2,7 +2,7 @@
 
 前端本地部署至远程服务器
 
-[![npm version](https://badge.fury.io/js/fronted-deploy-cli.svg)](http://badge.fury.io/js/fronted-deploy-cli)
+[![npm version](https://badge.fury.io/js/fronted-deploy-cli.svg)](http://badge.fury.io/js/fronted-deploy-cli) ![npm download](https://img.shields.io/npm/dt/fronted-deploy-cli.svg)
 
 ![](https://nodei.co/npm/fronted-deploy-cli.png?downloads=true&downloadRank=true&stars=true)
 
